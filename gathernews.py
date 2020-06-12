@@ -35,24 +35,24 @@ for article in npr_paper.articles:
     article.parse()
     article.nlp()
     if keyword in article.keywords:
-        print(article.title, file=summary)
-        print(article.authors, file=summary)
+        print(article.title, article.authors, file=summary)
         print(article.summary, file=summary)
+        print()
 
 for article in cnn_paper.articles:
     article.download()
     article.parse()
     article.nlp()
     if keyword in article.keywords:
-        print(article.title, file=summary)
-        print(article.authors, file=summary)
+        print(article.title, article.authors, file=summary)
         print(article.summary, file=summary)
+        print()
 
 for article in tc_paper.articles:
     article.download()
     article.parse()
     article.nlp()
     if keyword in article.keywords:
-        print(article.title, file=summary)
-        print(article.authors, file=summary)
+        print(article.title, article.authors, file=summary)
         print(article.summary, file=summary)
+        print()
